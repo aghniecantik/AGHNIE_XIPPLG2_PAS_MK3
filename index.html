@@ -1,0 +1,52 @@
+<!-- Define the document type as HTML -->
+<!DOCTYPE html>
+
+<!-- Start HTML element with setting the language to English -->
+<html lang="en">
+  <head>
+    <!-- Set the character encoding of the document to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Set the viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Add a link to the CSS file for styling and layout -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- Add a favicon (browser tab icon) -->
+    <link rel="icon" href="./src/img/mario.gif" />
+
+    <!-- Set the title of the page -->
+    <title>Super Mario</title>
+  </head>
+
+  <body>
+    <div class="game-board">
+      <!-- Display the image of Mario with the class "mario" -->
+      <img class="mario" src="./src/img/mario.gif" alt="mario" />
+
+      <!-- Display the image of a pipe with the class "pipe" -->
+      <img class="pipe" src="./src/img/pipe.png" alt="pipe" />
+
+      <!-- Display the image of clouds with the class "clouds" -->
+      <img class="clouds" src="./src/img/clouds.png" alt="clouds" />
+      <div class="score">Jumps: <span id="jumpCount">0</span></div>
+      <!-- Display a start button with the class "start" and call the "startGame()" function when clicked -->
+      <button class="start" onclick="startGame()">Start Running!</button>
+      <!-- Display the description for jumping after the start button -->
+      <p>Press spacebar to jump</p>
+    </div>
+
+    <div class="game-over">
+      <!-- Display the game over screen with a title and a restart button that calls the "restartGame()" function when clicked -->
+      <h1>Game Over :(</h1>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </body>
+
+  <!-- Add the JavaScript script linked to the "main.js" file -->
+  <script src="./src/js/main.js"></script>
+</html>
